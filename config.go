@@ -5,9 +5,11 @@ import (
 )
 
 const (
-	apiURLv1                       = "https://api.openai.com/v1"
+
 	defaultEmptyMessagesLimit uint = 300
 )
+
+var apiURLv1 = homeDir := os.Getenv("CHAT_URL")
 
 // ClientConfig is a configuration of a client.
 type ClientConfig struct {
